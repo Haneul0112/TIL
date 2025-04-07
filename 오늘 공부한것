@@ -1,0 +1,26 @@
+# 📌 뭔 코드였지? - 로그인 / 회원가입 모달 만들기 (React + Spring Boot)
+
+오늘은 React로 로그인/회원가입 모달 컴포넌트를 만들어봤다.  
+DaisyUI의 `dialog` 태그를 활용해서 UI를 구성했고, 로그인/회원가입 상태를 토글할 수 있게 했다.  
+입력된 데이터를 백엔드(Spring Boot)로 보내서 처리하는 구조로 만들었다.
+
+---
+
+## ✅ 주요 기능
+
+- 로그인 / 회원가입 전환 버튼
+- 입력값 유효성 검사
+- 로그인 시 username + password만 전송
+- 회원가입 시 name, phone, email까지 모두 전송
+- fetch로 Spring Boot 서버에 POST 요청
+- 서버 응답 메시지를 alert로 표시
+- 모달 닫기 기능 포함
+
+---
+
+## 💡 작동 방식 요약
+
+```js
+const url = isLogin
+  ? "http://localhost:8080/api/users/login"
+  : "http://localhost:8080/api/users/register";
