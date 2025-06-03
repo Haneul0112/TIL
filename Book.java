@@ -3,8 +3,8 @@ package com.springmvc.domain;
 import java.util.Objects;
 
 public class Book {
-      private String bookId; // 도서ID
-      private String name; // 도서명
+      private String bookId; // 도서ID.
+      private String name; // 도서명.
       private int unitPrice; // 가격
       private String author; // 저자
       private String description; // 설명
