@@ -1,0 +1,12 @@
+public class DotTriangle {
+    public static void main(String[] args) {
+        int height = 5; // 삼각형의 높이
+
+        for (int i = 1; i <= height; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("."); // 점 출력
+            }
+            System.out.println(); // 줄 바꿈
+        }
+    }
+}
